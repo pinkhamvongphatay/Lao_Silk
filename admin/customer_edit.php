@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<?php
 require('layout.php');
 require('../db.php');
 
@@ -9,8 +17,13 @@ $row = $result->fetch_assoc();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
+    $tel = $_POST['tel']; // รับค่าเบอร์โทร
 
-    $sql = "UPDATE customer SET username='$username', updated_date=NOW() WHERE customer_id=$id";
+    $sql = "UPDATE customer SET 
+                username='$username', 
+                tel='$tel',
+                updated_date=NOW() 
+            WHERE customer_id=$id";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: customer.php");
@@ -28,6 +41,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="mb-3">
                     <label class="form-label">ຊື່ຜູ້ໃຊ້</label>
                     <input type="text" name="username" class="form-control" value="<?= $row['username'] ?>" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ເບີໂທ</label>
+                    <input type="text" name="tel" class="form-control" value="<?= $row['tel'] ?>">
                 </div>
                 <button type="submit" class="btn btn-success">ບັນທຶກ</button>
                 <a href="customer.php" class="btn btn-secondary">ຍົກເລີກ</a>

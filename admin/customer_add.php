@@ -1,12 +1,23 @@
 <?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<?php
 require('layout.php');
 require('../db.php');
+
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $tel = $_POST['tel']; // รับค่าเบอร์โทร
 
-    $sql = "INSERT INTO customer (username, password) VALUES ('$username', '$password')";
+    $sql = "INSERT INTO customer (username, password, tel) VALUES ('$username', '$password', '$tel')";
     
     if ($conn->query($sql) === TRUE) {
         header("Location: customer.php");
@@ -28,6 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="mb-3">
                     <label class="form-label">ລະຫັດຜ່ານ</label>
                     <input type="password" name="password" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ເບີໂທ</label>
+                    <input type="text" name="tel" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-primary">ເພີ່ມ</button>
                 <a href="customer.php" class="btn btn-secondary">ຍົກເລີກ</a>

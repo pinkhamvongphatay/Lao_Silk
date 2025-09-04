@@ -1,0 +1,211 @@
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 09:54:05
+    [session_status] => Active
+    [user_id] => 23
+    [username] => panoy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => panoy
+            [role] => 
+            [customer_id] => 44
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:00:35
+    [session_status] => Active
+    [user_id] => 23
+    [username] => panoy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => panoy
+            [role] => 
+            [customer_id] => 44
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:01:58
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:02:05
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:03:03
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:13:41
+    [session_status] => Active
+    [user_id] => 20
+    [username] => pin
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 20
+            [username] => pin
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:15:41
+    [session_status] => Active
+    [user_id] => 20
+    [username] => pin
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 20
+            [username] => pin
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:15:56
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:16:28
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:21:23
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => Not set
+    [can_manage] => 
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => 
+        )
+
+)
+
+
+=== EMPLOYEE PAGE DEBUG ===
+Array
+(
+    [timestamp] => 2025-07-26 10:21:37
+    [session_status] => Active
+    [user_id] => 23
+    [username] => eiy
+    [role] => owner
+    [can_manage] => 1
+    [all_session] => Array
+        (
+            [user_id] => 23
+            [username] => eiy
+            [role] => owner
+        )
+
+)
+
+

@@ -1,19 +1,21 @@
-<?php require('layout.php')?>
-
-<!-- content -->
- <h1>ໜ້າຈັດການຂໍ້ມູນຂອງລູກຄ້າ</h1>
-
-<?php require('footer.php')?>
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <?php
 require('layout.php');
 require('../db.php');
 
+// ดึงข้อมูลลูกค้าจากฐานข้อมูล
 $sql = "SELECT * FROM customer ORDER BY created_date DESC";
 $result = $conn->query($sql);
 ?>
 
 <div class="container mt-4">
-    <h1>ໜ້າຈັດການລູກຄ້າ</h1>
+    <h1>ໜ້າຈັດການຂອງລູກຄ້າ</h1>
     <a href="customer_add.php" class="btn btn-primary mb-3">ເພີ່ມລູກຄ້າ</a>
 
     <table class="table table-bordered">
@@ -21,6 +23,7 @@ $result = $conn->query($sql);
             <tr>
                 <th>#</th>
                 <th>ຊື່ຜູ້ໃຊ້</th>
+                <th>ເບີໂທ</th>
                 <th>ວັນທີສ້າງ</th>
                 <th>ປັບປຸງ</th>
                 <th>ຈັດການ</th>
@@ -31,6 +34,7 @@ $result = $conn->query($sql);
             <tr>
                 <td><?= $row['customer_id'] ?></td>
                 <td><?= $row['username'] ?></td>
+                <td><?= $row['tel'] ?></td>
                 <td><?= $row['created_date'] ?></td>
                 <td><?= $row['updated_date'] ?></td>
                 <td>
